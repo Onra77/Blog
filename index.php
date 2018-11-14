@@ -2,6 +2,8 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
+     <link rel="stylesheet" href="style.css">
+    <title>Contact formulier</title>
 <style>
 .error {color: #FF0000;}
 </style>
@@ -10,8 +12,8 @@
 
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$nameErr = $ageErr =$emailErr = $genderErr = $websiteErr = "";
+$name = $age = $email = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -23,7 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $nameErr = "Only letters and white space allowed";
     }
   }
-  
+  if (empty($_POST["age"])) {
+    $ageErr = "Age is required";
+  } else {
+    $age = test_input($_POST["age"]);
+    // check if the age is well-formed
+    if (!preg_match("/^[0-9 ]*$/",$age)) {
+      $ageErr = "Only numbers are allowed";
+    }
+  }
+    
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
@@ -64,12 +75,14 @@ function test_input($data) {
   return $data;
 }
 ?>
-
-<h2>Contact Formulier</h2>
+<div id=formulier>
 <p><span class="error">* required field</span></p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name:<br> <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  Age:<br> <input type="number" name="age" value="<?php echo $age;?>">
+  <span class="error">* <?php echo $ageErr;?></span>
   <br><br>
   E-mail:<br> <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
@@ -77,29 +90,51 @@ function test_input($data) {
   Website:<br> <input type="text" name="website" value="<?php echo $website;?>">
   <span class="error"><?php echo $websiteErr;?></span>
   <br><br>
-  Comment:<br> <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
   Gender:
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  Comment:<br> <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+  <br><br>
+    <input type="submit" name="submit" value="Submit">  
 </form>
-
+    </div>
+    
+<div id=output>    
 <?php
 echo "<h2>Your Input:</h2>";
 echo $name;
+echo "<br>";
+echo $age;
 echo "<br>";
 echo $email;
 echo "<br>";
 echo $website;
 echo "<br>";
-echo $comment;
-echo "<br>";
 echo $gender;
-?>
+echo "<br>";
+echo $comment;
+    
+$txt = "data2.txt";
+if (isset($_POST['name']) && isset($_POST['email'])) { //check if both fields are set
+    $fh = fopen($txt, 'a'); 
+    
+    $text = $_POST['name'].';'.$_POST['age'].';'.$_POST['email'].';'.$_POST['website'].';'.$_POST['comment'].';'.$_POST['gender'].'*';
+    $result = fwrite($fh,$text); // Write information to the file
+    fclose($fh); // Close the file
+}
 
+?>
+    </div>
+
+<div id=data>
+<?php
+echo file_get_contents("data2.txt");
+?>     
+    </div>    
+    
+    
 </body>
 </html>
