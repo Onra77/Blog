@@ -1,36 +1,4 @@
 body {
-    color: black;
+    color: blue;
     margin: 1%;
 }
-
-#formulier {
-    position: relative;
-    background-color:darkgray;
-    width: 320px;
-    border:5px solid blue;
-    padding: 10px;
-  }
-
-#output {
-    margin: 1%;
-    position: absolute;
-    top: 0px;
-    right: 42%;
-    
-    width: 320px;
-    background-color:darkgray;
-    border:5px solid blue;
-    padding: 10px;
-  }
-
-#data {
-    margin: 1%;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    
-    width: 500px;
-    background-color:darkgray;
-    border:5px solid blue;
-    padding: 10px;
-  }
