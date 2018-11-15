@@ -1,4 +1,13 @@
+/*
+#makeup {
+    background-image: url("Rick_and_Morty2.jpeg");
+    background-repeat: no-repeat; 
+    background-position:top;
+    background-size: 100%;
+} */
+
 body {
-    color: blue;
-    margin: 1%;
+    width: 40%;
+    border: 1px;
+    border-color: greenyellow;
 }

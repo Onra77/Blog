@@ -2,9 +2,11 @@
     session_start();
     include_once("db.php");
 
-
-
-
+    //login not avalible yet.
+    /* if{isset} ($_session['']) {
+        header("location: login.php");
+        return;
+    } */
 
 
     if(!isset($_GET['pid'])) {
@@ -32,17 +34,17 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="post_style.css">
     <title>Blog - Post</title>
 </head>
 <body>
     <?php 
     $sql_get ="SELECT * FROM post WHERE id=$pid LIMIT 1";
     $res = mysqli_query($db, $sql_get);
-    
+ 
     if(mysqli_num_rows($res) > 0) {
         while ($row = mysqli_fetch_assoc($res)) {
             $title =$row['title'];
@@ -54,10 +56,8 @@
           }
         }
     ?>
- 
         <input name="update" type="submit" value="Update">
+       <input name="reset" type="reset" value="Reset"> 
     </form>
 </body>    
 </html>
-
-//https://www.youtube.com/watch?v=dIVVaysbNNI

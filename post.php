@@ -28,6 +28,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="post_style.css">
     <title>Blog - Post</title>
 </head>
 <body>
@@ -35,6 +36,10 @@
         <input placeholder="Title" name="title" type="text" autofocus size="48" value="<?php echo $title; ?>"><br/><br/>
         <textarea placeholder="Content" name="content" rows="20" cols="50"><?php echo $content; ?></textarea><br/>
         <input name="post" type="submit" value="Post">
+        <input name="reset" type="reset" value="Reset"> 
+     
+        
+        
     </form>
 </body>    
 </html>

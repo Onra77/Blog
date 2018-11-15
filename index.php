@@ -7,10 +7,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
     
     </head>
-
+<div id=makeup>
 <body>
     <?php
     require_once("nbbc/nbbc.php");
@@ -43,7 +44,7 @@
     
   ?>
     
-  
+    </div>  
 </body>
 
 </html>
