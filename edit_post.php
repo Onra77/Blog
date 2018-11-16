@@ -58,6 +58,5 @@
     ?>
         <input name="update" type="submit" value="Update">
        <input name="reset" type="reset" value="Reset"> 
-    </form>
-</body>    
+    </body>
 </html>

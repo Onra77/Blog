@@ -13,6 +13,12 @@
     </head>
 <div id=makeup>
 <body>
+    
+    <form action="search.php" method="GET">
+        <input type="text" name="query" />
+        <input type="submit" value="Search" />
+    </form>
+    
     <?php
     require_once("nbbc/nbbc.php");
     
@@ -30,6 +36,8 @@
             $title = $row['title'];
             $content = $row['content'];
             $date = $row['date'];
+
+/* de knoppen Delete, Edit en New.  */
             
             $admin = "<div><a href='del_post.php?pid=$id'>Delete</a>&nbsp;<a href='edit_post.php?pid=$id'>Edit</a>&nbsp;<a href='post.php?pid=$id'>New</a></div>";
             
@@ -43,8 +51,7 @@
     }
     
   ?>
-    
+        
+    </body>
     </div>  
-</body>
-
 </html>
