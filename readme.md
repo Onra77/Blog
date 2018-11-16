@@ -18,7 +18,7 @@ w2-002
 Een overzicht links van het beeld met datum en tijdstip van eerste creatie.
 
 w2-003
-Met bbcode wordt de tekst gefilterd op specialie tekens.
+Met nbbc.php hiermee wordt HTML code uitgefilterd.
 
 w2-004
 Zeer eenvoudig captcha code 1+1=

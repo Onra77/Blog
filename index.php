@@ -1,5 +1,12 @@
 <?php
     Session_start();
+
+ //login not avalible yet.
+    /* if{isset} ($_session['']) {
+        header("location: login.php");
+        return;
+    } */
+
     include_once("db.php");
 
 ?>
@@ -18,6 +25,8 @@
         <input placeholder="Werkt helaas nog niet. :(" type="text" name="query" />
         <input type="submit" value="Search" />
     </form>
+    
+//     
     
     <?php
     require_once("nbbc.php");
