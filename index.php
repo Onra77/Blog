@@ -26,8 +26,6 @@
         <input type="submit" value="Search" />
     </form>
     
-//     
-    
     <?php
     require_once("nbbc.php");
     

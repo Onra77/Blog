@@ -42,7 +42,7 @@
         <input name="post" type="submit" value="Post">
         <input name="reset" type="reset" value="Reset">  
            <p>1+1=</p>
-        <input placeholder="Wat is 1=1" type="text" name="captcha">  
+        <input placeholder="Wat is 1+1" type="text" name="captcha">  
          
         
         
