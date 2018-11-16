@@ -2,7 +2,7 @@ Goedendag,
 
 w2-001
 Ik heb een blog gemaakt met de optie om je blog te wijzigen en verwijderen.
-Laatste wordt bovenaan geplaats en de database is in phpmyadmin waar ik een table heb gemaakt.
+Laatste wordt bovenaan geplaats en de database is in phpmyadmin/ SQL database waar ik een table heb gemaakt.
 Met 4 onderwerpen: id, title, content en date. id is primary en AUTO-ICREMENT heeft ruimte voor 11 tekense.
 title heeft een beperkt ruimte voor 50 tekens en content heeft ruimte voor 65.535 tekens of 64KiB.
 Date  heeft timestamp (datum+tijd) en heeft standaard dat tijd gelijk is aan de moment dat er gepost wordt.
