@@ -20,7 +20,7 @@
     </form>
     
     <?php
-    require_once("nbbc/nbbc.php");
+    require_once("nbbc.php");
     
     $bbcode = new BBCode;
     
