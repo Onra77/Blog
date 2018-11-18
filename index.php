@@ -21,11 +21,16 @@
 <div id=makeup>
 <body>
     
-    <form action="search.php" method="GET">
-        <input placeholder="Werkt helaas nog niet. :(" type="text" name="query" />
-        <input type="submit" value="Search" />
-    </form>
+       <form class="form-signin" method="POST">
+       	   <span class="input-group-addon" id="basic-addon1"></span>
+	       <input type="text" name="username" class="form-control" placeholder="Gebruikersnaam" required>
+	       <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Wachtwoord" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            <input type="button" value="Registeer" onclick="location.href='register.php';">
+            <input type="button" value="Nieuwe bericht" onclick="location.href='post.php';">
+        </form>
     
+        
     <?php
     require_once("nbbc.php");
     

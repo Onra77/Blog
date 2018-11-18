@@ -57,6 +57,7 @@
         }
     ?>
         <input name="update" type="submit" value="Update">
-       <input name="reset" type="reset" value="Reset"> 
+        <input name="reset" type="reset" value="Reset">
+        <input type="button" value="Terug" onclick="location.href='index.php';">
     </body>
 </html>

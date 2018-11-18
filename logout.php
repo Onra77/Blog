@@ -8,7 +8,7 @@
     <title></title>
 </head>
 <body>
-    <meta http-equiv="refresh" content="1'url=login.php" />
+    <meta http-equiv="refresh" content="1'url=index.php" />
 </body>
 </html>
     

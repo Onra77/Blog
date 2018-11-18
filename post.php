@@ -37,16 +37,14 @@
     <body background="3.jpg">
       
        <form action="post.php" method="post" enctype="multipart/form-data">
-        <input placeholder="Title" name="title" type="text" autofocus size="48" value="<?php echo $title; ?>"><br/><br/>
-        <textarea placeholder="Content" name="content" rows="20" cols="50"><?php echo $content; ?></textarea><br/>
-        <input name="post" type="submit" value="Post">
-        <input name="reset" type="reset" value="Reset">  
-           <p>1+1=</p>
-        <input placeholder="Wat is 1+1" type="text" name="captcha">  
-         
-        
-        
-    </form>
+            <input placeholder="Title" name="title" type="text" autofocus size="48" value=<?php echo $title; ?>><br/><br/>
+            <textarea placeholder="Content" name="content" rows="20" cols="50"><?php echo $content; ?></textarea><br/>
+            <input name="post" type="submit" value="Post">
+            <input name="reset" type="reset" value="Reset">
+            <input type="button" value="Terug" onclick="location.href='index.php';">   
+               <p>1+1=</p>
+            <input placeholder="Wat is de uitkomst?."text" name="captcha">  
+        </form>
         
 </body>    
 </html>

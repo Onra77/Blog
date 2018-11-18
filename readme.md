@@ -12,18 +12,19 @@ Bij niet volledige invullen van een blog krijg je een foutmelding maar de ingevo
 Dit moest met een aparte functie mogelijk worden gemaakt en deze functie moest als varriable worden ingevoerd.
 Tekst kan bij nieuwe blog ook gereset worden.
 
-
 w2-002
 Een overzicht links van het beeld met datum en tijdstip van eerste creatie.
 
 w2-003
-Met nbbc.php hiermee wordt HTML code uitgefilterd uit de tekst voor title en content.
+Met nbbc.php wordt HTML code uit de tekst uitgefilterd.
+Login en registratie werkt niet... :(
 
 w2-004
 Zeer eenvoudig captcha code 1+1=
 
-w2-005
-Search venster werkt helaas nog niet....
+
+mvg
+Arno
 
 
 
