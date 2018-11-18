@@ -6,7 +6,7 @@ Laatste wordt bovenaan geplaats en de database is in phpmyadmin/ SQL database wa
 Met 4 onderwerpen: id, title, content en date. id is primary en AUTO-ICREMENT heeft ruimte voor 11 tekense.
 title heeft een beperkt ruimte voor 50 tekens en content heeft ruimte voor 65.535 tekens of 64KiB.
 Date (datum+tijd) heeft een timestamp het is gelijk aan de moment dat de post geplaatst wordt.
-Een wijziging in je blog brengt geen wijziging aan in deze date.
+Een wijziging in je blog brengt geen wijziging aan in de date.
 
 Bij niet volledige invullen van een blog krijg je een foutmelding maar de ingevoerde tekst blijft staan.
 Dit moest met een aparte functie mogelijk worden gemaakt en deze functie moest als varriable worden ingevoerd.
