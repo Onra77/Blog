@@ -17,13 +17,16 @@ w2-004
 Zeer eenvoudig captcha code 1+1=
 
 w2-005
-Edit van een blog/bericht.
+Edit van een blog/bericht. -error: Title wordt ingekort tot 1 woord ongeacht hoe lang die is.
 
 w2-006
 verwijderen van een blog/bericht.
 
 w2-007
 Reseten naar ogineel bericht of lege veld.
+
+w2-008
+Login en registratie werkt nog niet :(
 
 mvg
 Arno
