@@ -11,7 +11,6 @@ Het blijft dus op dezelfde plaats staan.
 
 w2-003
 Met nbbc.php wordt HTML code uit de tekst uitgefilterd.
-Login en registratie werkt niet... :(
 
 w2-004
 Zeer eenvoudig captcha code 1+1=
