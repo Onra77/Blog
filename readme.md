@@ -1,19 +1,13 @@
 Goedendag,
 
 w2-001
-Ik heb een blog gemaakt met de optie om je blog te wijzigen en verwijderen.
-Laatste wordt bovenaan geplaats en de database is in phpmyadmin/ SQL database waar ik een table heb gemaakt.
-Met 4 onderwerpen: id, title, content en date. id is primary en AUTO-ICREMENT heeft ruimte voor 11 tekense.
-title heeft een beperkt ruimte voor 50 tekens en content heeft ruimte voor 65.535 tekens of 64KiB.
-Date (datum+tijd) heeft een timestamp het is gelijk aan de moment dat de post geplaatst wordt.
-Een wijziging in je blog brengt geen wijziging aan in de date.
-
-Bij niet volledige invullen van een blog krijg je een foutmelding maar de ingevoerde tekst blijft staan.
-Dit moest met een aparte functie mogelijk worden gemaakt en deze functie moest als varriable worden ingevoerd.
-Tekst kan bij nieuwe blog ook gereset worden.
+Men kan berichten plaatsen en als er geen berichten zijn dan wordt dit vermeld. Er is een knop om een nieuwe bericht te maken.
+Bij het niet volledige invullen van een blog krijg je een foutmelding maar de ingevoerde tekst blijft staan.
+Standaard wordt alle tekst worden verwijderd.
 
 w2-002
-Een overzicht links van het beeld met datum en tijdstip van eerste creatie.
+De meeste recente blog wordt bovenaan geplaatst, wijzigen van je blog/bericht brengt geen wijziging in de datum.
+Het blijft dus op dezelfde plaats staan.
 
 w2-003
 Met nbbc.php wordt HTML code uit de tekst uitgefilterd.
@@ -22,6 +16,14 @@ Login en registratie werkt niet... :(
 w2-004
 Zeer eenvoudig captcha code 1+1=
 
+w2-005
+Edit van een blog/bericht.
+
+w2-006
+verwijderen van een blog/bericht.
+
+w2-007
+Reseten naar ogineel bericht of lege veld.
 
 mvg
 Arno
